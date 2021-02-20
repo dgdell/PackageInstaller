@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/install_confirm_question"
+        style="@style/padded"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="@string/install_confirm_question"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="@dimen/_30sp_in1080p" />
+
+    <View
+        android:id="@+id/line_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_1dp_in1080p"
+        android:layout_below="@id/install_confirm_question"
+        android:layout_marginLeft="@dimen/_10dp_in1080p"
+        android:layout_marginTop="@dimen/_2dp_in1080p"
+        android:layout_marginRight="@dimen/_10dp_in1080p"
+        android:layout_marginBottom="0.0dip"
+        android:background="@color/color_dialog_line_button" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_90dp_in1080p"
+        android:layout_below="@id/line_button"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_dialog_btn"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="@string/install"
+            android:textColor="@drawable/selector_dialog_text"
+            android:textSize="@dimen/_40sp_in1080p" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_dialog_btn"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@drawable/selector_dialog_text"
+            android:textSize="@dimen/_40sp_in1080p" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_774dp_in1080p"
+    android:layout_height="@dimen/_355dp_in1080p"
+    android:layout_gravity="center"
+    android:background="@drawable/ic_dialog_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/app_snippet"
+        layout="@layout/app_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/uninstall_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/center_text"
+            style="@style/padded"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/_40dp_in1080p"
+            android:gravity="center"
+            android:text="@string/uninstalling"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/_30sp_in1080p" />
+
+        <Button
+            android:id="@+id/device_manager_button"
+            android:layout_width="@dimen/_160dp_in1080p"
+            android:layout_height="@dimen/_50dp_in1080p"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_15dp_in1080p"
+            android:background="@drawable/selector_dialog_btn"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="@string/manage_device_administrators"
+            android:textColor="@drawable/selector_dialog_text"
+            android:textSize="@dimen/_28sp_in1080p"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ok_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_1dp_in1080p"
+            android:layout_marginLeft="@dimen/_10dp_in1080p"
+            android:layout_marginTop="@dimen/_2dp_in1080p"
+            android:layout_marginRight="@dimen/_10dp_in1080p"
+            android:layout_marginBottom="0.0dip"
+            android:background="@color/color_dialog_line_button" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_90dp_in1080p"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ok_button"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_dialog_btn"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="@drawable/selector_dialog_text"
+                android:textSize="@dimen/_40sp_in1080p" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

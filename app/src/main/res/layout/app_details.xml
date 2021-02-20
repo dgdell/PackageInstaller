@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/app_snippet"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/_80dp_in1080p">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_70dp_in1080p"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="@dimen/_40dp_in1080p"
+            android:layout_height="@dimen/_40dp_in1080p"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_12dp_in1080p"
+            android:layout_marginTop="@dimen/_12dp_in1080p"
+            android:background="@color/transparent"
+            android:gravity="left"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_32dp_in1080p"
+            android:layout_marginLeft="@dimen/_5dp_in1080p"
+            android:layout_marginTop="@dimen/_12dp_in1080p"
+            android:layout_toRightOf="@id/app_icon"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:shadowColor="@color/shadow"
+            android:shadowRadius="2.0"
+            android:singleLine="true"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/_30sp_in1080p" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_3dp_in1080p"
+        android:layout_below="@id/ll_title"
+        android:background="@drawable/ic_dialog_line"
+        android:paddingTop="@dimen/_5dp_in1080p" />
+</RelativeLayout>

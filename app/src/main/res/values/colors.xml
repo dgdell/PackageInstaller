@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#D81B60</color>
+    <color name="shadow">#cc222222</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_dialog_button">#2481DC</color>
+    <color name="color_dialog_line_title1">#1A78D4</color>
+    <color name="color_dialog_line_title2">#3698E9</color>
+    <color name="color_dialog_line_title3">#52B9FE</color>
+    <color name="color_dialog_line_button">#4dffffff</color>
+    <color name="color_dialog_btn_focus">#fff1f1f1</color>
+    <color name="color_dialog_btn">#ffb2b2b2</color>
+</resources>
